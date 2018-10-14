@@ -13,4 +13,14 @@ Gem library used
 3. jquery
 4. bootstrap
 
-Please see 'data/' folder for question 1, 2, 3 answer
+Usage:
+http://localhost:3000/api/v1/www.google.com
+To get short url
+
+http://localhost:3000/api/v1/details/www.google.com
+To get detail of short url
+
+http://localhost:3000
+To see summary page
+
+Please see 'data' folder for question 1, 2, 3 answer
