@@ -1,0 +1,3 @@
+$ ssh user@backup.server.com
+$ cd /destination/copy/path
+$ scp -r -v user@server.com:/path/to/json/file/*.json . >/path/to/log/output.log
