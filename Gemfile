@@ -39,6 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Domain name parser for Ruby based on the Public Suffix List
 gem 'public_suffix'
 
+# The Ruby gem for querying Maxmind.com's GeoIP database, which returns the geographic location of a server given its IP address
 gem 'geoip'
 
 # A gem to automate using jQuery with Rails
