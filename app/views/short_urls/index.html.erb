@@ -1,0 +1,28 @@
+ <div class="container">
+ 	<div class="container-fluid">
+	  <h2>Summary</h2>
+	  <p>Table below is showing all urls which has been shortened through this service:</p>
+	  <div class="table-responsive">
+		  <table class="table table-hover">
+		    <thead>
+		      <tr>
+		        <th>Original URL</th>
+		        <th>Short URL</th>
+		        <th>Generate Date</th>
+		        <th>No. of Access</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		    	<% @url_obj.each do |url| %>
+		    	<tr>
+		    		<td><a href="<%= url.simplified_url %>" target="blank"><%= url.simplified_url %></a></td>
+		    		<td><a href="<%= 'http://' + request.host_with_port + '/' + url.short_url.to_s %>" target="blank"><%= 'http://' + request.host_with_port + '/' + url.short_url.to_s %></a></td>
+		    		<td><%= url.created_at.to_date %></td>
+		    		<td><span class="badge badge-primary"><%= url.short_url_details.length %></span></td>
+		    	</tr>
+		    	<% end %>
+		    </tbody>
+		  </table>
+		</div>
+	</div>
+</div>
