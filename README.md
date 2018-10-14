@@ -12,3 +12,5 @@ Gem library used
 2. geoip
 3. jquery
 4. bootstrap
+
+Please see 'data/' folder for question 1, 2, 3 answer
